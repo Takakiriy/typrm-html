@@ -1,4 +1,4 @@
-Project: next_js_minimum
+Project: typrmHTML
 Play:
     - cd __Project__
     - npm ci
