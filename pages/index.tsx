@@ -20,8 +20,8 @@ const Home: NextPage = () => {
           >typrm</a> format documents!
         </h1>
 
-        <form  action="/search">
-          <input className={styles.input}  type="text"   name="q"  size={50}  maxLength={400}/>
+        <form  className={styles.form}  action="/search">
+          <input className={styles.input}  type="text"   name="q"  maxLength={400}/>
           <input className={styles.submit} type="submit" value="#search:" />
         </form>
 
