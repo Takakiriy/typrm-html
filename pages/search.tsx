@@ -8,9 +8,9 @@ const Post = () => {
 
     useEffect(() => {
         const asyncFunction = async () => {
-            const response = await fetch('/api/search');  // __Project__/pages/api/search.ts
-            const aJSON = JSON.stringify(await response.json(), null, '    ');
-            setContents(aJSON);
+            const  responseData = await fetch('/api/search');  // __Project__/pages/api/search.ts
+            const  response = await responseData.json();
+            setContents(response.contents);
         }
 
         asyncFunction()
@@ -18,8 +18,8 @@ const Post = () => {
     }, []);
 
     return <>
-        <p>keyword: {keyword}</p>
-        <p>{contents}</p>
+        <p>#keyword: {keyword}</p>
+        <pre>{contents}</pre>
     </>;
 }
 
