@@ -14,3 +14,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+code.contents {
+  margin: 0;
+  white-space: pre;
+  font-family: "Courier New";
+}
