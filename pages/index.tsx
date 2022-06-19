@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -24,6 +25,18 @@ const Home: NextPage = () => {
           <input className={styles.input}  type="text"   name="q"  maxLength={400}/>
           <input className={styles.submit} type="submit" value="#search:" />
         </form>
+
+        <Link href="/search?q=keyw">
+          <a className="foo" rel="noopener noreferrer">
+            /search?q=keyw
+          </a>
+        </Link>
+
+        <Link href="/JavaScript.yaml#L5">
+          <a className="foo" rel="noopener noreferrer">
+            /JavaScript.yaml
+          </a>
+        </Link>
 
       </main>
 
